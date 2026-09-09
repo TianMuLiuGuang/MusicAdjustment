@@ -245,7 +245,7 @@ class LyricsAdjuster:
         lyric_lines[-1] += "\n"
         min_length = len(lyric_lines[0])
         time_end = lyric_lines[0].find(']')
-        if time_end +2 != min_length: 
+        if time_end + 2 != min_length or time_end < 9: 
             return
 
         processed_text=""
